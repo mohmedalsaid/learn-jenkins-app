@@ -32,7 +32,7 @@ pipeline {
                     echo "test sucsseded"
                     npm test
                     echo "test sucsseded210"
-                    e
+                    ls -la bild
                 '''
             }
         }
