@@ -31,7 +31,8 @@ pipeline {
                 sh '''
                     echo "test sucsseded"
                     npm test
-                    echo "test sucsseded2"
+                    echo "test sucsseded210"
+                    e
                 '''
             }
         }
