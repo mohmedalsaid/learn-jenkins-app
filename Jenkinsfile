@@ -29,7 +29,7 @@ pipeline {
             }
             steps {
                 sh '''
-                    echo "test sucssededd"
+                    echo "test sucsseded"
                     npm test
                 '''
             }
