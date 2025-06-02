@@ -32,7 +32,7 @@ pipeline {
                     echo "test sucsseded"
                     npm test
                     echo "test sucsseded210"
-                    ls -la bild
+                    ls -la build
                 '''
             }
         }
