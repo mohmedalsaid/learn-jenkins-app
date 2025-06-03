@@ -1,0 +1,3 @@
+[build]
+command = "" # Explicitly set to empty string to disable build command
+publish = "build"
