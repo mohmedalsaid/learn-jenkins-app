@@ -21,7 +21,7 @@ pipeline {
             }
         }
         
-        stage('Deoloyment'){
+        stage('parallel')
             parallel{
                 stage('Test') {
                     agent{
@@ -57,9 +57,9 @@ pipeline {
                     }
                 }
             }                
-            }
-        }
-        stage('Build') {
+            
+        
+        stage('deployment') {
             agent{
                 docker{
                     image 'node:18-alpine'
@@ -78,4 +78,6 @@ pipeline {
             junit 'jest-results/junit.xml'
         }
     }
+    }
 }
+
