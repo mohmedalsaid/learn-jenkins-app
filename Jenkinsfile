@@ -87,6 +87,9 @@ pipeline {
                     reuseNode true
                 }
             }
+            environment{
+                CI_ENVIRONMENT_URL = 'https://effortless-pony-287603.netlify.app'
+            }
             steps {
                 sh '''
                     
