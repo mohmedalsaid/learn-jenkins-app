@@ -82,6 +82,7 @@ pipeline {
                     env.STAGING_URL = sh(script: "node_modules/.bin/node-jq -r '.deploy_url' deply-output.json", returnStdout: true)
                 }
             }
+        }
 
 
         stage('staging e2e') {
