@@ -1,0 +1,12 @@
+pipeline {
+    agent any
+
+
+    stages {
+        stage('byild the docker im'){
+            steps{
+                sh 'docker build -t my-playwright .'
+            }
+        }
+    }
+}
