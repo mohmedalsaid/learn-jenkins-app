@@ -7,6 +7,12 @@ pipeline {
     }
 
     stages {
+        stage('docker'){
+            steps{
+                sh 'docker run -t my-paywright .'
+            }
+        }
+
         stage('Build') {
             agent{
                 docker{
