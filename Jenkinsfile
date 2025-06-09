@@ -27,6 +27,7 @@ pipeline {
                         --cluster LeamJenkinsApp-Cluster-Prod \
                         --service LeamJenkinsApp-service-prod \
                         --task-definition LearnJenkinsApp-TaskDefinition-Prod:$LATEST_TD_REV
+                    aws ecs wait services-stable --cluster LeamJenkinsApp-Cluster-Prod --services LeamJenkinsApp-service-prod
                 '''
                 }
                 
